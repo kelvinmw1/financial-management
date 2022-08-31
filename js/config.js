@@ -1,15 +1,14 @@
- // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  const firebaseConfig = {
-    apiKey: "AIzaSyA-1Vok1gE4doInx_HJwoiW2R13NNpMtpY",
-    authDomain: "my-twitter-12cd4.firebaseapp.com",
-    projectId: "my-twitter-12cd4",
-    storageBucket: "my-twitter-12cd4.appspot.com",
-    messagingSenderId: "317646262590",
-    appId: "1:317646262590:web:7f7d4c2d6e61856b1e5c6f",
-    measurementId: "G-69BZMX0K9E"
-  };
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyDVFswXYo3HTx3obxQCmbfvP2m0-53mLOU",
+  authDomain: "financial-manager-11566.firebaseapp.com",
+  projectId: "financial-manager-11566",
+  storageBucket: "financial-manager-11566.appspot.com",
+  messagingSenderId: "966500878019",
+  appId: "1:966500878019:web:a728f4a6700642920c4476",
+  measurementId: "G-378K8VDMSG"
+};
 
-  //initializing firebase
-
-  firebase.initializeApp(firebaseConfig);
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
