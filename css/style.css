@@ -150,17 +150,39 @@ span{
 .mainpay{
     height: 100vh;
     width: 100%;
-    background-color: #272a38;
+    background-color: white;
     position: relative;
 }
 .paymentinfo{
     position: absolute;
+    height: 400px;
+    width: 400px;
+    background-color: #272a38;
+    border-radius: 30px;
     top: 30%;
     left: 30%;
 }
-.btn{
-    margin-top: 30px;
-    background-color: #323644;
+.searchuser{
+    margin-top: 70px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+.searchuser input{
+    width: 300px;
+}
+.search{
+    margin-top: 10px;
+    width: 130px;
+}
+.paymentamount{
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+.paymentamount{
+    width: 300px;
+}
+.paymentbtn{
+    margin-left: 20px;
 }
 .navbar{
     height: 100vh;
@@ -179,9 +201,7 @@ span{
 }
 .logo{
     color: white;
-    font-size: 30px;
-   
-    
+    font-size: 30px;    
 }
 .menuItem{
     display: flex;
