@@ -155,16 +155,16 @@ span{
 }
 .paymentinfo{
     position: absolute;
-    height: 400px;
-    width: 400px;
+    height: 600px;
+    width: 600px;
     background-color: #272a38;
     border-radius: 30px;
-    top: 30%;
+    top: 10%;
     left: 30%;
 }
 .searchuser{
     margin-top: 70px;
-    margin-bottom: 20px;
+    margin-bottom: 170px;
     margin-left: 20px;
 }
 .searchuser input{
@@ -173,6 +173,9 @@ span{
 .search{
     margin-top: 10px;
     width: 130px;
+}
+.userResult p{
+    color: white;
 }
 .paymentamount{
     margin-bottom: 20px;
