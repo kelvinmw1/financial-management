@@ -105,16 +105,15 @@ span{
 }
 .mainprof{
     height: 100vh;
-    width: 100%;
+    width: 80%;
     position: relative;
-    background-color: #323644;
 }
 .profile{
     height: 500px;
     width: 500px;
-    background-color: #525561;
+    background-color: black;
     position: absolute;
-    top: 15%;
+    top: 0%;
     left: 30%;
     border-radius: 30px;   
 }
@@ -137,84 +136,55 @@ span{
 .username{
     color: white;
     font-size: 30px;
+    margin-left: -18px;
 }
 .usernumber{
-    color: white;    
+    color: white;   
 }
 .edit{
     padding-left: 29%;
 }
 .uploadphoto{
     padding-left: 29%;
+    margin-top: 20px;
 }
-.mainpay{
+.leftnav{
     height: 100vh;
-    width: 100%;
-    background-color: white;
+    width: 20%;
+    background-color: black;
     position: relative;
 }
-.paymentinfo{
+.navitems{
     position: absolute;
-    height: 600px;
-    width: 600px;
-    background-color: #272a38;
-    border-radius: 30px;
-    top: 10%;
-    left: 30%;
+    top: 25%;
+    left: 5%;
 }
-.searchuser{
-    margin-top: 70px;
-    margin-bottom: 170px;
-    margin-left: 20px;
-}
-.searchuser input{
-    width: 300px;
-}
-.search{
-    margin-top: 10px;
-    width: 130px;
-}
-.userResult p{
-    color: white;
-}
-.paymentamount{
-    margin-bottom: 20px;
-    margin-left: 20px;
-}
-.paymentamount{
-    width: 300px;
-}
-.paymentbtn{
-    margin-left: 20px;
-}
-.navbar{
-    height: 100vh;
-    width: 100%;
-    position: relative;
-}
-.navcontent{
-    position: absolute;
-    height: 100vh;
-    width: 25%;
-    background-color: #272a38;
-    left: 0%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.logo{
-    color: white;
-    font-size: 30px;    
-}
-.menuItem{
-    display: flex;
-    align-items: center;
-    font-size: 28px;
-    color: white;
+.leftnav a{
+    display: block;
+    padding: 15px;
     text-decoration: none;
-    padding-bottom: 50px;
-    padding-top: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    width: fit-content;
+    color: white;
+    font-size: 20px;
 }
+.activemenu{
+    text-decoration: underline;
+}
+.rightnav{
+    height: 100vh;
+    width: 80%;
+    background-color: whitesmoke;
+    padding: 30px;
+}
+.rightnav h1{
+    padding: 20px;
+    font-weight: bolder;
+}
+.rigtnavtop{
+    justify-content: space-between;
+    width: 100%;
+}
+.table{
+   margin-top: 40px;
+   
+}
+

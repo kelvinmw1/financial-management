@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reports</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/fe2ac20d9d.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+</head>
+<body>
+
+
+  <section class="dashborad">
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand">Navbar</a>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+</section>
+<div class="nav d-flex">
+    <div class="leftnav">
+        <div class="navitems">
+            <a href="dashboard.html"><i class="fa fa-home" aria-hidden="true"></i>Dashboard</a>
+            <a href="income.html"><i class="fa fa-credit-card" aria-hidden="true"></i></i>Income</a>
+            <a href="expenses.html"><i class="fa fa-money" aria-hidden="true"></i></i>Expenses</a>
+            <a href="reports.html"><i class="fa fa-flag" aria-hidden="true"></i></i>Reports</a>
+            <a href="profile.html"><i class="fa fa-user" aria-hidden="true"></i></i>Profile</a>
+            <a href="index.html"><i class="fa fa-user" aria-hidden="true"></i></i>logout</a>
+            
+        </div>
+    </div>
+    <div class="rightnav">
+        <h1>Reports</h1>
+
+    </div>
+   
+</div>
+
+
+    
+
+
+
+
+
+
+
+     <!-- setting up firebase -->
+     <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-auth.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-firestore.js"></script>
+     <script src="js/config.js"></script>
+ 
+    <!-- my logic -->
+      <script src="js/reports.js"></script>
+ 
+</body>
+</html>

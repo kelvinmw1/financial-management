@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Income</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/fe2ac20d9d.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="dashborad">
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand">Navbar</a>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </nav>
+    </section>
+    <div class="nav d-flex">
+        <div class="leftnav">
+            <div class="navitems">
+                <a href="dashboard.html"><i class="fa fa-home" aria-hidden="true"></i>Dashboard</a>
+                <a href="income.html"><i class="fa fa-credit-card" aria-hidden="true"></i></i>Income</a>
+                <a href="expenses.html"><i class="fa fa-money" aria-hidden="true"></i></i>Expenses</a>
+                <a href="reports.html"><i class="fa fa-flag" aria-hidden="true"></i></i>Reports</a>
+                <a href="profile.html"><i class="fa fa-user" aria-hidden="true"></i></i>Profile</a>
+                <a href="index.html"><i class="fa fa-user" aria-hidden="true"></i></i>logout</a>
+                
+            </div>
+        </div>
+        <div class="rightnav">
+            <div class="d-flex rigtnavtop">
+                <h1>Income</h1>
+                <button class="btn btn-dark"data-bs-toggle="modal" data-bs-target="#exampleModal">Add Income</button>
+            </div>
+
+            <table class="table table-dark table-hover">
+                <thead>
+                    <tr>
+                      <th scope="col">Income Type</th>
+                      <th scope="col">Payment Method</th>
+                      <th scope="col">Amount</th>
+                      <th scope="col">Received By</th>
+                      <th scope="col">Edit</th>
+                      <th scope="col">Delete</th>
+                    </tr>
+                  </thead>
+                  <tbody id="incomelist">
+                    <!-- <tr>
+                      <th scope="row">1</th>
+                      <td>Mark</td>
+                      <td>Otto</td>
+                      <td>@mdo</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Jacob</td>
+                      <td>Thornton</td>
+                      <td>@fat</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td colspan="2">Larry the Bird</td>
+                      <td>@twitter</td>
+                    </tr> -->
+                  </tbody>
+            </table>
+            
+
+        </div>
+        
+        
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <label for="">Income Type</label>
+                    <input type="text" placeholder="Income type" class="form-control mb-3" id="incomeType">
+                    <label for="">Payment Method</label>
+                    <select name="" id="paymentMethod" class="form-control mb-3">
+                        <option value="Cheque">Cheque</option>
+                        <option value="M-Pesa">M-Pesa</option>
+                        <option value="Cash">Cash</option>
+                    </select>
+                    <label for="">Amount</label>
+                    <input type="number" placeholder="Amount" id="amount" class="form-control mb-3">
+                    <label for="">Received By</label>
+                    <input type="text" placeholder="Received by" id="receivedBy" class="form-control mb-3">
+               
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" id="Submit">Submit</button>
+                </div>
+            </div>
+            </div>
+        </div>
+       
+    </div>
+
+    
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-firestore.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/income.js"></script>
+
+</body>
+</html>

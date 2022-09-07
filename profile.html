@@ -4,86 +4,115 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Profile</title>
     <link rel="stylesheet" href="css/style.css">
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://use.fontawesome.com/fe2ac20d9d.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 </head>
 <body>
 
-    <div>
-
-    </div>
-
-    <div class="mainprof">
-
-        <div class="profile">
-            <div class="userdata">
-                <img class="pic" src="" id="profilepic">
-                <h1 class="username" id="username"></h1>
-                <p class="usernumber" id="usernumber"></p>
+    <section class="dashborad">
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand">Navbar</a>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
             </div>
-            <div class="edit">
-
-                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                    Edit Profile
-                </button>
+          </nav>
+    </section>
+    <div class="nav d-flex">
+        <div class="leftnav">
+            <div class="navitems">
+                <a href="dashboard.html"><i class="fa fa-home" aria-hidden="true"></i>Dashboard</a>
+                <a href="income.html"><i class="fa fa-credit-card" aria-hidden="true"></i></i>Income</a>
+                <a href="expenses.html"><i class="fa fa-money" aria-hidden="true"></i></i>Expenses</a>
+                <a href="reports.html"><i class="fa fa-flag" aria-hidden="true"></i></i>Reports</a>
+                <a href="profile.html"><i class="fa fa-user" aria-hidden="true"></i></i>Profile</a>
+                <a href="index.html"><i class="fa fa-user" aria-hidden="true"></i></i>logout</a>
                 
-                <!-- Modal -->
-                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                        <h5 class="modal-title" id="staticBackdropLabel">Edit Account</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                           <input type="text" class="form form-control" id="editfirstname" placeholder="First Name">
-                           <input type="text" class="form form-control" id="editlastname" placeholder="last Name">
-                        </div>
-                        <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary" id="savechanges">Save Changes</button>
-                        </div>
-                    </div>
-                    </div>
-                </div>
             </div>
-            <div class="uploadphoto">
-                                <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    upload profile Photo
-                </button>
-                
-                <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">update profile photo</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <input type="file" id="uploadpic">
-                        </div>
-                        <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary" id="upload">upload photo</button>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-            </div>
-           
         </div>
+        <div class="rightnav">
+            <h1>Profile</h1>
+            <div class="mainprof">
 
+                <div class="profile">
+                    <div class="userdata">
+                        <img class="pic" src="" id="profilepic">
+                        <h1 class="username" id="username"></h1>
+                        <p class="usernumber" id="usernumber"></p>
+                    </div>
+                    <div class="edit">
+        
+                         <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                            Edit Profile
+                        </button>
+                        
+                        <!-- Modal -->
+                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h5 class="modal-title" id="staticBackdropLabel">Edit Account</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                   <input type="text" class="form form-control" id="editfirstname" placeholder="First Name">
+                                   <input type="text" class="form form-control" id="editlastname" placeholder="last Name">
+                                </div>
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary" id="savechanges">Save Changes</button>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uploadphoto">
+                                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            upload profile Photo
+                        </button>
+                        
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">update profile photo</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <input type="file" id="uploadpic">
+                                </div>
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary" id="upload">upload photo</button>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+        
+            </div>
+
+        </div>
+       
     </div>
+
+    
+
+   
 
    
     
