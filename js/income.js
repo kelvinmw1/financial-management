@@ -38,9 +38,20 @@ firebase.firestore().collection("income").get().then((querySnapshot)=>{
             content+= '<td> KES '+amount+'</td>'
             content+= '<td>'+receivedBy+'</td>'
             content+= '<td><button class="btn btn-success">Edit</button></td>'
-            content+= '<td><a href="" class="btn btn-danger">Delete</a></td>'
+            content+= '<td><button onclick = "deleteDoc(\'' +docId+ '\')" class="btn btn-danger"data-bs-toggle="modal" data-bs-target="#deletemodal">Delete</button></td>'
 
         content+= '</tr>'
     })
     $("#incomelist").append(content);
 })
+    //run a function to get the doc id on click of a button
+    window.deleteDoc = function(docId){
+        console.log(docId)
+
+        document.getElementById("deletebtn").onclick = function(){
+
+            firebase.firestore().collection("income").doc(docId).delete().then(()=>{
+                window.location.href = "income.html"
+            })
+        }
+    } 
